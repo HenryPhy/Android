@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.qq.controller.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_main_chat"
+            android:checked="true"
+            style="@style/MainButtonStyle"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/message"/>
+
+        <RadioButton
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_main_contact"
+            style="@style/MainButtonStyle"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/contact" />
+
+        <RadioButton
+            android:layout_gravity="center"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            style="@style/MainButtonStyle"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/rb_main_setting"
+            android:background="@drawable/dynamic" />
+    </RadioGroup>
+</LinearLayout>
